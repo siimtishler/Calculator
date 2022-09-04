@@ -14,7 +14,8 @@ class Calculator{
     }
 
     appendNumber(number){
-        if(this.currentOperand.includes('.') && number === '.')return;
+        if(this.currentOperand.includes('.') && number === '.'
+        || this.currentOperand.length > 20)     return;
         this.currentOperand += number;
         //console.log(this.currentOperand);
     }
