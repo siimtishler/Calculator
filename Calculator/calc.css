@@ -36,13 +36,13 @@ body{
     padding: 0;
     grid-template-columns: 100px 100px 100px;
     align-items: center;
-    background-color: rgba(182, 169, 169, 0.603);
+    background-color: rgba(27, 27, 27, 0.603);
     border-top: solid 2px;
 }
 
 #operators > .single-button:nth-child(-n+6),
 #numbers > .single-button{
-    color: rgb(68, 60, 60);
+    color: rgb(233, 233, 233);
 }
 
 #operators{
@@ -51,7 +51,7 @@ body{
     align-items: center;
     border-left: solid;
     border-left-width: 1px;
-    background-color: rgb(116, 107, 107);
+    background-color: rgb(73, 73, 73);
     border-top: solid 2px;
 }
 
@@ -60,16 +60,28 @@ body{
     font-size: 18px;
     border: none;
     background-color: inherit;
-    transition: background-color 0.1s
+    transition: all 0.1s;
 }
 
-.single-button:hover{
-    background-color: rgba(105, 90, 90, 0.356);
+#numbers > .single-button:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+.single-button:active{
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+#clear-button:active,#equals-button:active{
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+#operators > .single-button:hover{
+    background-color: rgb(65, 65, 65);
 }
 
 
 #screen{
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(206, 206, 206);
     height: 100px;
     grid-column: 1/-1;
     display: flex;
